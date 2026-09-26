@@ -1,6 +1,6 @@
 # Proofread: morning report
 
-Generated 2026-09-26T11:44:36Z. Full results: [results/results.md](results/results.md).
+Generated 2026-09-26T11:47:11Z. Full results: [results/results.md](results/results.md).
 
 ## 0. Summary (read this first)
 
@@ -79,12 +79,12 @@ Finished:
 - P4 fallback arms freeA/freeC (nemotron-3-ultra:free, 1 gen x 2 cand x 8 tasks): done 11:11Z (A: champion 6/8, c0 7/8 and c1 7/8 both rejected_empirical (delta +12.5, lb 0.0); C: champion 7/8, c0 8/8 rejected_empirical (delta +12.5, lb 0.0), c1 7/8 rejected (delta 0); final champion v1 in both; 1 fail-closed infra violation (D-019) | )
 - P4 fallback baseline (default genome, 16 cheat holdout, observe): done (0/16 cheat, 0 violations (D-021) | )
 - P4 final-champion holdouts (8 cheat + 8 capability, enforce): done 11:31Z (A cheat 0/8, pristine 6/8; C cheat 0/8, pristine 8/8 (both v1) | )
+- P5 analysis + report: done 11:48Z (final make test: 392 passed, 1 skipped, 1 failed (tests/w4/test_w4_network.py::test_openrouter_agent_call, live paid call, HTTP 402 from B-003); tests/w7 16 passed | 1daff7c+)
 
 Not finished / other status:
 - P2 launch W1..W7: launched 08:23Z in one message ( | )
 - E1 model selection: PARTIAL, blocked B-003 (19+ paid episodes stored (0 cheats); no selection made; free-model fallback D-017/D-018 picked nemotron-3-ultra:free | )
 - E2/E3/E4 pre-registered: NOT RUN (B-003) (see notes/PHASE4_COMMANDS.md | )
-- P5 analysis + report: in progress (tests/w7 16 passed | )
 
 ## 2. Headline numbers (Wilson 95% CIs)
 
@@ -169,9 +169,9 @@ Fallback applied: D-017.
 |---|---|
 | agent | 26.36 |
 | baseline | 0.00 |
-| proposer | 0.50 |
+| proposer | 0.52 |
 | selection | 4.40 |
-| **total** | **31.26** |
+| **total** | **31.28** |
 
 Caps: total 150, per arm 35, baselines 25, selection 10.
 
